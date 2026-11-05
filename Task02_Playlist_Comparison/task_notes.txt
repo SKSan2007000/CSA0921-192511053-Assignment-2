@@ -1,0 +1,8 @@
+Task 2 – Music Playlist Collections
+
+Complexity:
+• ArrayList: indexed get O(1); append O(1) amortised; insertion or removal near the front or middle O(n) because elements shift; iteration O(n).
+• LinkedList: access by index and locating a middle position O(n); insertion/removal at a known node O(1); iteration O(n). Each node stores links as well as the element reference.
+• ArrayDeque: add/remove at either end O(1) amortised; no indexed get operation; iteration O(n).
+
+Decision: ArrayList is suitable for a playlist that needs indexed access. ArrayDeque is more suitable for the Up Next queue, where items are added at both ends and removed from the front.

@@ -1,0 +1,7 @@
+Sorted leaderboard:
+1. Arrows (points=18, GD=15)
+2. Bisons (points=18, GD=15)
+3. Falcons (points=18, GD=12)
+4. Comets (points=15, GD=20)
+Original order preserved = true
+Tie rule: points DESC, goal difference DESC, name ASC.

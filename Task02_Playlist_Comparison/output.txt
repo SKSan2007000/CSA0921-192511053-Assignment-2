@@ -1,0 +1,24 @@
+ArrayList vs LinkedList playlist timings (microseconds; indicative single sample)
+n=1000 op=append ArrayList=578 LinkedList=451
+n=1000 op=front-insert ArrayList=548 LinkedList=396
+n=1000 op=middle-insert ArrayList=201 LinkedList=1524
+n=1000 op=middle-remove ArrayList=429 LinkedList=1162
+n=1000 op=kth-access ArrayList=587 LinkedList=3564
+n=1000 op=iterate ArrayList=335 LinkedList=402
+n=10000 op=append ArrayList=269 LinkedList=425
+n=10000 op=front-insert ArrayList=826 LinkedList=74
+n=10000 op=middle-insert ArrayList=248 LinkedList=6193
+n=10000 op=middle-remove ArrayList=385 LinkedList=5524
+n=10000 op=kth-access ArrayList=111 LinkedList=14604
+n=10000 op=iterate ArrayList=692 LinkedList=244
+n=50000 op=append ArrayList=73 LinkedList=124
+n=50000 op=front-insert ArrayList=2886 LinkedList=48
+n=50000 op=middle-insert ArrayList=1305 LinkedList=32187
+n=50000 op=middle-remove ArrayList=1737 LinkedList=29530
+n=50000 op=kth-access ArrayList=376 LinkedList=93389
+n=50000 op=iterate ArrayList=4207 LinkedList=334
+Up Next deque endpoint workload:
+n=1000 ArrayDeque endpoint batch=1498 us
+n=10000 ArrayDeque endpoint batch=1060 us
+n=50000 ArrayDeque endpoint batch=241 us
+ArrayDeque is designed for efficient operations at both ends; it has no indexed get(k).

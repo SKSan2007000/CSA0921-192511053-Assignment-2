@@ -1,0 +1,4 @@
+Baseline immutable concatenation avg_ms=74.445
+Redesign pre-sized StringBuilder avg_ms=0.493
+Improvement ratio=151.05x (environment dependent)
+Objective: reduce repeated intermediate String allocation while preserving exact ticket text.

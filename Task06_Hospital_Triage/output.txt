@@ -1,0 +1,6 @@
+Expected hand-check: severity ascending; arrival ascending for ties.
+Treatment order: Meena(S1) Kumar(S1) Lata(S2) Dev(S2) Ravi(S3) John(S3) Nila(S4) Asha(S5)
+PriorityQueue iteration is not sorted; poll() repeatedly to obtain service order.
+Starvation: continuous critical arrivals can indefinitely delay minor cases.
+Fair policy proposal: periodically reassess; escalate by maximum-wait thresholds with clinician approval.
+Complexity: offer O(log n), poll O(log n), peek O(1); storage O(n).

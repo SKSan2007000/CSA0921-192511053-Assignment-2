@@ -1,0 +1,9 @@
+Task 4 – Pharmacy Inventory Map Comparison
+
+Complexity:
+• HashMap lookup and insertion: O(1) average, O(n) worst case; iteration order is not guaranteed.
+• TreeMap lookup and insertion: O(log n); keys remain sorted.
+• LinkedHashMap lookup and insertion: O(1) average; insertion order is maintained.
+• Sorting HashMap keys for a report takes O(n log n); traversing the sorted keys takes O(n).
+
+Decision: Use HashMap when lookup speed matters and order is unnecessary. Use TreeMap when sorted order is needed continuously. Use LinkedHashMap when insertion order must be preserved.

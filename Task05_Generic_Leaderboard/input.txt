@@ -1,0 +1,3 @@
+Task 5 – Generic Sports Leaderboard
+
+The program creates four teams with points and goal-difference values. It sorts them by points descending, goal difference descending and team name ascending. The input list is also checked after sorting to confirm that its original order is unchanged. No keyboard input is required.

@@ -1,0 +1,3 @@
+Task 3 – Student De-duplication with HashSet
+
+The program creates two faulty student records with the same ID, then inserts four records into the corrected HashSet. The corrected test data contains IDs S101, S102, s101 and S103. The Student constructor converts IDs to uppercase and removes surrounding spaces. No keyboard input is required.

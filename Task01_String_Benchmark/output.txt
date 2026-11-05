@@ -1,0 +1,7 @@
+Railway e-ticket workloads; one warm-up and five measured runs; timings are machine-dependent.
+SHORT tickets=1 fields=6 String_ms=0.032 Builder_ms=0.010 Buffer_ms=0.006 outputChars=60 estimatedConcatSteps=7
+MANY_TICKETS tickets=10000 fields=50 String_ms=2300.423 Builder_ms=9.579 Buffer_ms=11.005 outputChars=4988890 estimatedConcatSteps=510000
+LARGE_TICKET tickets=20 fields=500 String_ms=4.232 Builder_ms=0.147 Buffer_ms=0.145 outputChars=107930 estimatedConcatSteps=10020
+StringBuffer synchronizes append operations; StringBuilder is the single-threaded per-ticket choice.
+For a shared multithreaded booking log, use a synchronized logging design or a thread-safe logger; do not share one mutable builder unsafely.
+Intermediate String count is estimated from concatenation steps, not measured by an allocation profiler.

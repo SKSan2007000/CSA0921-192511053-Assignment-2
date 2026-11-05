@@ -1,0 +1,9 @@
+Task 5 – Generic Sports Leaderboard
+
+Complexity:
+• Copying n teams into the leaderboard: O(n) time and O(n) additional space.
+• Sorting n teams: O(n log n) typical time.
+• Reading a ranked team by index from the stored ArrayList: O(1).
+• The comparison checks points, goal difference and then team name.
+
+Decision: Comparable is useful for a class's natural ordering. Comparator is better when the application needs a specific or changeable ranking rule. Integer.compare avoids overflow risks associated with subtracting integer values.

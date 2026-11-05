@@ -1,0 +1,10 @@
+Task 1 – Railway E-Ticket String Construction
+
+The program compares String concatenation, StringBuilder and StringBuffer. The reported concatenation-step count is an estimate; it is not a profiler measurement of allocated objects.
+
+Complexity:
+• Repeated String concatenation can require repeated copying and may approach O(k²) work for k appended parts.
+• StringBuilder append is amortised O(1) per append; building the complete result is O(L), where L is the output length.
+• StringBuffer has similar asymptotic behaviour to StringBuilder, with synchronization overhead on its methods.
+
+Decision: Use a local StringBuilder to build each ticket. Use a separate thread-safe logging mechanism for a shared booking log.

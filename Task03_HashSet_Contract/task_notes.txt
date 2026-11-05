@@ -1,0 +1,8 @@
+Task 3 – Student De-duplication with HashSet
+
+Complexity:
+• HashSet add, contains and remove: O(1) average; O(n) in the worst case when many collisions occur.
+• Computing the hash and comparing an ID take O(m), where m is the identifier length.
+• TreeSet add, contains and remove: O(log n), while maintaining sorted order.
+
+Decision: Override equals() and hashCode() consistently. The identity field is final so that its hash value cannot change after insertion. Equal objects must have equal hash codes.

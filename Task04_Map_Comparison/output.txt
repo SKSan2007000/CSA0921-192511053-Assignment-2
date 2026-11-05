@@ -1,0 +1,12 @@
+DATASET medicines=1000 lookups=100000
+HashMap lookup_ms=19.353 code_report_ms=1.383 insertion_report_ms=0.105 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU000198
+TreeMap lookup_ms=18.151 code_report_ms=0.466 insertion_report_ms=0.161 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU000000
+LinkedHashMap lookup_ms=6.626 code_report_ms=0.320 insertion_report_ms=0.027 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU000000
+DATASET medicines=10000 lookups=100000
+HashMap lookup_ms=7.736 code_report_ms=5.073 insertion_report_ms=0.600 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU008925
+TreeMap lookup_ms=28.083 code_report_ms=2.141 insertion_report_ms=0.975 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU000000
+LinkedHashMap lookup_ms=4.302 code_report_ms=1.278 insertion_report_ms=0.228 checksum=24962561 codeFirst=SKU000000 insertionFirst=SKU000000
+DATASET medicines=100000 lookups=100000
+HashMap lookup_ms=17.327 code_report_ms=26.533 insertion_report_ms=2.206 checksum=24962611 codeFirst=SKU000000 insertionFirst=SKU051795
+TreeMap lookup_ms=57.577 code_report_ms=9.290 insertion_report_ms=2.703 checksum=24962611 codeFirst=SKU000000 insertionFirst=SKU000000
+LinkedHashMap lookup_ms=8.877 code_report_ms=5.748 insertion_report_ms=1.224 checksum=24962611 codeFirst=SKU000000 insertionFirst=SKU000000

@@ -1,0 +1,3 @@
+Task 6 – Hospital Emergency Triage
+
+The program creates eight patients with severity levels and arrival sequence numbers. Severity 1 is critical and has the highest priority. Patients with the same severity are served in arrival order. No keyboard input is required.

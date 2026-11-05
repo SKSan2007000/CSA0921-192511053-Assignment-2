@@ -1,0 +1,5 @@
+Faulty implementation: equal records may occupy separate hash buckets; observed size=2
+Prediction for corrected set: 3 unique IDs; actual size=3
+Corrected equals=true, equal hash codes=true
+Extra test: identity ID is final, so hash identity cannot mutate after insertion.
+Contract: equal objects must have equal hash codes; unequal objects may collide.

@@ -1,0 +1,9 @@
+Task 6 – Hospital Emergency Triage
+
+Complexity:
+• PriorityQueue offer/add: O(log n).
+• PriorityQueue poll: O(log n).
+• PriorityQueue peek: O(1).
+• Storage: O(n).
+
+Decision: A normal FIFO queue cannot prioritise critical patients. PriorityQueue orders patients by severity and then arrival time. Repeated poll() calls produce the treatment order; direct iteration over the queue is not guaranteed to be sorted. Waiting-time escalation should be defined and approved by clinical staff to reduce starvation.

@@ -1,0 +1,8 @@
+Task 7 – Ticket Generation Performance Redesign
+
+Complexity:
+• Repeated immutable String concatenation may approach O(k²) work as the accumulated text is copied repeatedly.
+• StringBuilder appends are amortised O(1) each, so constructing the final output is O(L) in the output length.
+• The builder requires O(L) storage for the resulting text; pre-sizing can reduce buffer expansions.
+
+Decision: Use a pre-sized StringBuilder for repeated ticket construction. The measured speed-up applies to this workload and machine; it should not be treated as a universal performance guarantee.
